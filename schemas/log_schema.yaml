@@ -1,0 +1,26 @@
+log_entry:
+  fields:
+    - name: timestamp
+      required: yes
+      example: "2026-02-17 10:30:00"
+
+    - name: level
+      required: yes
+      options: [INFO, WARNING, ERROR]
+      example: "ERROR"
+
+    - name: service
+      required: yes
+      example: "payment-service"
+
+    - name: message
+      required: yes
+      example: "Payment failed"
+
+    - name: user_id
+      required: no
+      example: "U123"
+
+    - name: ip_address
+      required: no
+      example: "192.168.1.1"
